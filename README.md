@@ -7,10 +7,19 @@ NetP.sh es un script de Bash que te permite realizar una serie de pruebas de con
 
 Para utilizar este script, descarga el archivo netP.sh en tu sistema y ejecútalo en una terminal. El script enviará pings a tres direcciones IP diferentes (8.8.4.4, 8.8.8.8 y 4.2.2.4) con un intervalo de tiempo de 5 segundos entre cada ping. Los resultados se mostrarán en tiempo real.
 
-
 ## Control de errores
 
 Incluye un control de errores para verificar si el comando "ping" se ejecutó correctamente y, si no, imprimir un mensaje de error. Si el comando "ping" no puede conectarse a una dirección IP de destino, el script imprimirá un mensaje de error indicando que no se pudo conectar a esa dirección IP.
+
+## Más direcciones IP
+
+Busca la línea que define el arreglo direcciones_IP: 
+```direcciones_IP=("8.8.4.4" "8.8.8.8" "4.2.2.4")```
+
+Agrega las direcciones IP adicionales al arreglo, separadas por un espacio y dentro de comillas dobles.
+Por ejemplo, si quieres agregar las direcciones IP 192.168.1.1 y 10.0.0.1, el arreglo se vería así:
+bash
+```direcciones_IP=("8.8.4.4" "8.8.8.8" "4.2.2.4" "192.168.1.1" "10.0.0.1")```
 
 ## To-do
 
